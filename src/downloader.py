@@ -44,7 +44,7 @@ class Downloader(QObject):
         self.num_downloads = 1
 
         # Then do some regex stuff to separate the filename from the path
-        split = filepath.rfind(os.sep)
+        split = filepath.rfind('/')
         path = filepath[0:split]
         filename = filepath[split + 1:]
 
